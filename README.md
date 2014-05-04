@@ -51,19 +51,19 @@ To get the stoopid browsers to get a two column layout in desktop viewports you 
 
 ## How to use
 
-1. Define your media queries at _scss/app/_config.scss:Tool
+1 - Define your media queries at _scss/app/_config.scss:Tool
 ````
 $mq-group2: em(600px);
 $mq-group3: em(768px);
 $mq-group4: em(1024px);
 ````
 
-2. Define your minimum Media Query for app-basic at _scss/app/app-basic.scss. Anything less than this value will not be included in the export.
+2 - Define your minimum Media Query for app-basic at _scss/app/app-basic.scss. Anything less than this value will not be included in the export.
 ````
 $fix-mqs: $mq-group3;   // change this to your minimum media query
 ````
 
-3. Only use the Media Query Mixins outlined at _scss/app/_tool.scss. Example usage at _scss/app/_tests/_media-query-parsing.scss
+3 - Only use the Media Query Mixins outlined at _scss/app/_tool.scss. Example usage at _scss/app/_tests/_media-query-parsing.scss
 ````
 .myGeneralExample {
 	@include respond-min($mq-group2) {
