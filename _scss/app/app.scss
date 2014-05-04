@@ -1,8 +1,15 @@
+/**
+|--------------------------------------------------------------------------
+| Main import file
+|--------------------------------------------------------------------------
+*/
+
 @import 'helpers/core.type-coercion';
-@import 'app.config';
+@import 'config';
 
 @import 'tool';
 
 
-// Warning: don't include for production
-@import '_tests/media-query-parsing';
+/** Start your imports from here **/
+
+@import '_tests/media-query-parsing';   // Warning: don't include for production

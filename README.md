@@ -49,6 +49,9 @@ To get the stoopid browsers to get a two column layout in desktop viewports you 
 ``app-basic.css`` is a stripped-down version of ``app.css``. It keeps only the relevant content for the full desktop experience, stripping away the Media Queries and locks the viewport so these browser can not resize, enabling Developers to practice real Mobile-first without all of the cross-browser headaches, currently IE8< browsers.
 
 
+## How to use
+
+
 ## Sample output
 
 ![Mobile-first SASS Tool sample output](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/Screen Shot 2014-05-04 at 10.39.03 am.png?raw=true)

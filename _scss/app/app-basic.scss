@@ -1,10 +1,17 @@
+/**
+|--------------------------------------------------------------------------
+| This file is part of the Tool!
+| Don't add to it. Only edit the $fix-mqs value.
+|--------------------------------------------------------------------------
+*/
+
 @import 'helpers/core.type-coercion';
-@import 'app.config';
+@import 'config';
 
 @import 'tool';
 
-
 $is-ie: true;
-$fix-mqs: $mq-group3;
+$fix-mqs: $mq-group3;   // change this to your minimum media query
 
-@import 'app';
+
+@import 'app';  // the magic happens here
