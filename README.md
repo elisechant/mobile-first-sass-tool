@@ -51,5 +51,5 @@ To get the stoopid browsers to get a two column layout in desktop viewports you 
 
 ## Sample output
 
-![Mobile-first SASS Tool sample output](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/mobile-first-twitter.jpg)
+![Mobile-first SASS Tool sample output](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/Screen Shot 2014-05-04 at 10.39.03 am.png?raw=true)
 
