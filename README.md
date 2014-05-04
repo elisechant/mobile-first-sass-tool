@@ -16,7 +16,7 @@ The **Mobile-first SASS Tool** outputs two source files ``app.css`` and ``app-ba
 ````
 
 
-Mobile-first Development means *develop for the most basic experience, and then progressively enhance*, using Media Queries to do so, towards a full Progressively Enhanced experience.
+Mobile-first Development means *develop for the most basic experience, and then progressively enhance* ... (using Media Queries) towards a full Progressively Enhanced experience.
 
 This is the problem with Mobile-first:
 
