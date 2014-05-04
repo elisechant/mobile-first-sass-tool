@@ -5,7 +5,6 @@
 $BASELINE:  16px;
 
 
-
 //
 // Mobile-first SASS Tool
 //
@@ -13,7 +12,7 @@ $BASELINE:  16px;
 $fix-mqs: false !default;   // don't edit
 $is-ie: false !default;     // don't edit
 
-// 1. Define your media queries
+// 1. Define your media query groups
 $mq-group2: em(600px);
 $mq-group3: em(768px);
 $mq-group4: em(1024px);

@@ -1,7 +1,12 @@
+//
+// Media Query helper for min-width type
+// @example @include respond-min($mq-group2) { .cat { color: brown } }
+//
+
 @mixin respond-min($width) {
-	// if we're outputting for a fixed media query set...
+	// handle for stripped output (app-basic.scss)
 	@if $fix-mqs {
-		// ...and if the styles concern region larger than supported lower bound (stipulated by $fix-mqs in app-basic.scss)
+		// ...and if the Media Query is greater than the lower bound (app-basic.scss)
 		@if $fix-mqs <= $width {
 			@content;
 		}
@@ -14,16 +19,22 @@
 	}
 }
 
+
+//
+// Media Query helper for max-width type
+// @example @include respond-max($mq-group2) { .cat { color: brown } }
+//
+
 @mixin respond-max($width) {
-	// if we're outputting for a fixed media query set...
+	// handle for stripped output (app-basic.scss)
 	@if $fix-mqs {
-		// ...and if the styles concern region larger than supported lower bound (stipulated by $fix-mqs in app-basic.scss)
+		// ...and if the Media Query is greater than the lower bound (app-basic.scss)
 		@if $fix-mqs <= $width {
 			@content;
 		}
 	}
+	// handle normal (app.scss)
 	@else {
-		// otherwise, output it using a regular media query
 		@media all and (max-width: $width) {
 			@content;
 		}
@@ -32,8 +43,7 @@
 
 
 //
-// Helper to inject IE styles inline without outputting to other browsers
-// Compiles to app-ie.scss
+// Inline Helper to inject IE styles to app-basic.scss only
 //
 
 @mixin old-ie {
