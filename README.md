@@ -41,7 +41,7 @@ This is the problem with Mobile-first:
 
 With Real Mobile-first Twitter might look like this might look like this in IE8:
 
-![Mobile-first Twitter](https://github.com/elisechant/mobile-first-sass-tool/images/mobile-first-twitter.jpg)
+![Mobile-first Twitter](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/mobile-first-twitter.jpg)
 
 
 To get the stoopid browsers to get a two column layout in desktop viewports you need the **Mobile-first SASS Tool**.
