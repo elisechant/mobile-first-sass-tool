@@ -1,10 +1,10 @@
-# Mobile-first SASS Tool
+# Mobile-first Sass Tool
 **A Boilerplate for Real Mobile-first Development without the cross-browser headaches**
 
 
 ## Overview
 
-The **Mobile-first SASS Tool** outputs two source files ``app.css`` and ``app-basic.css``. Rendering the alternate style sheets like this:
+The **Mobile-first Sass Tool** outputs two source files ``app.css`` and ``app-basic.css``. Rendering the alternate style sheets like this:
 
 ````
 <!--[if (gte IE 9) | !(IE)]><!-->
@@ -44,7 +44,7 @@ With Real Mobile-first Twitter might look like this might look like this in IE8:
 ![Mobile-first Twitter](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/mobile-first-twitter.jpg?raw=true)
 
 
-To get the stoopid browsers to get a two column layout in desktop viewports you need the **Mobile-first SASS Tool**.
+To get the stoopid browsers to get a two column layout in desktop viewports you need the **Mobile-first Sass Tool**.
 
 ``app-basic.css`` is a stripped-down version of ``app.css``. It keeps only the relevant content for the full desktop experience, stripping away the Media Queries and locks the viewport so these browser can not resize, enabling Developers to practice real Mobile-first without all of the cross-browser headaches, currently IE8< browsers.
 
@@ -84,5 +84,5 @@ $fix-mqs: $mq-group3;   // change this to your minimum media query
 
 ## Sample output
 
-![Mobile-first SASS Tool sample output](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/Screen Shot 2014-05-04 at 10.39.03 am.png?raw=true)
+![Mobile-first Sass Tool sample output](https://github.com/elisechant/mobile-first-sass-tool/blob/master/images/Screen Shot 2014-05-04 at 10.39.03 am.png?raw=true)
 
