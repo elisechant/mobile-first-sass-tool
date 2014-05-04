@@ -1,0 +1,54 @@
+//
+// Set media queries unless is app-ie.scss.
+// For IE, don't wrap the styles in media queries
+//
+
+$fix-mqs: false !default;
+
+@mixin respond-min($width) {
+	// if we're outputting for a fixed media query set...
+	@if $fix-mqs {
+		// ...and if the styles match lower bound stipulated by $fix-mqs in app-ie.scss
+		@if $fix-mqs <= $width {
+			@content;
+		}
+	}
+	@else {
+		// otherwise, output it using a regular media query
+		@media all and (min-width: $width) {
+			@content;
+		}
+	}
+}
+
+@mixin respond-max($width) {
+	// if we're outputting for a fixed media query set...
+	@if $fix-mqs {
+		// ...and if the styles concern region larger than supported lower bound (stipulated by $fix-mqs in app-ie.scss)
+		@if $fix-mqs <= $width {
+			@content;
+		}
+	}
+	@else {
+		// otherwise, output it using a regular media query
+		@media all and (max-width: $width) {
+			@content;
+		}
+	}
+}
+
+
+//
+// Inject IE styles inline without outputting to other browsers
+// Compiles to app-ie.scss
+//
+
+$is-ie: false !default;
+
+@mixin old-ie {
+	// Only use this content if we're dealing with old IE
+	// In the `project-ie.scss` file we set this variable to `true`
+	@if $is-ie {
+		@content;
+	}
+}

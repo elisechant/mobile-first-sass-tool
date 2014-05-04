@@ -1,0 +1,46 @@
+@warn "---------- ONLY INCLUDE ~/test/**/* IN DEVELOPMENT ----------";
+
+
+.js {
+	content: 'outside media query';
+}
+
+
+/** RESPOND MIN */
+.js {
+	@include respond-min($mq-group2) {
+		content: 'inside media query 2';
+	}
+}
+
+.js {
+	@include respond-min($mq-group3) {
+		content: 'inside media query 3';
+	}
+}
+
+.js {
+	@include respond-min($mq-group4) {
+		content: 'inside media query 4';
+	}
+}
+
+
+/** RESPOND MAX */
+.js {
+	@include respond-max($mq-group2) {
+		content: 'inside media query 2';
+	}
+}
+
+.js {
+	@include respond-max($mq-group3) {
+		content: 'inside media query 3';
+	}
+}
+
+.js {
+	@include respond-max($mq-group4) {
+		content: 'inside media query 4';
+	}
+}

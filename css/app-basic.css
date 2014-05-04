@@ -1,0 +1,16 @@
+.js {
+  content: 'basic'; }
+
+/** RESPOND MIN */
+.js {
+  content: 'inside media query 3'; }
+
+.js {
+  content: 'inside media query 4'; }
+
+/** RESPOND MAX */
+.js {
+  content: 'inside media query 3'; }
+
+.js {
+  content: 'inside media query 4'; }

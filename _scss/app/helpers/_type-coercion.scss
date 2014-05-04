@@ -1,0 +1,23 @@
+//
+// Strip units from any value
+// @param $number - the value to strip
+//
+
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+
+//
+// Convert pixels to ems
+// @param $target - the pixel value to convert. May have units or be unit-less
+// @param $base - the pixel context of conversion, is the baseline value (usually 16px)
+//
+
+@function em($target, $context: $BASELINE) {
+	$_target: strip-units($target);
+	$_context: strip-units($context);
+
+	@if $_target == 0 { @return 0 }
+	@return $_target / $_context + 0em;
+}
