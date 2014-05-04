@@ -1,4 +1,4 @@
-# Mobile-first SASS Tool.
+# Mobile-first SASS Tool
 **A Boilerplate for Real Mobile-first Development without the cross-browser headaches**
 
 
