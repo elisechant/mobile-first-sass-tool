@@ -1,7 +1,7 @@
-@import 'app.vars';
-@import 'helpers/type-coercion';
-@import 'app.utils';
+@import 'helpers/core.type-coercion';
 @import 'app.config';
+
+@import 'tool';
 
 
 $is-ie: true;

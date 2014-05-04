@@ -1,2 +1,28 @@
-.js {
-  content: 'outside media query'; }
+.TEST-WIDGET {
+  content: 'No media query.'; }
+
+/** RESPOND MIN */
+@media all and (min-width: 37.5em) {
+  .TEST-WIDGET {
+    content: "Inside media query 2. Don't include in app-basic."; } }
+
+@media all and (min-width: 48em) {
+  .TEST-WIDGET {
+    content: 'inside media query 3.'; } }
+
+@media all and (min-width: 64em) {
+  .TEST-WIDGET {
+    content: 'inside media query 4.'; } }
+
+/** RESPOND MAX */
+@media all and (max-width: 37.5em) {
+  .TEST-WIDGET {
+    content: "inside media query 2. Don't include in app-basic."; } }
+
+@media all and (max-width: 48em) {
+  .TEST-WIDGET {
+    content: 'inside media query 3.'; } }
+
+@media all and (max-width: 64em) {
+  .TEST-WIDGET {
+    content: 'inside media query 4.'; } }

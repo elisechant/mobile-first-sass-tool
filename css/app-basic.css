@@ -1,16 +1,16 @@
-.js {
-  content: 'basic'; }
+.TEST-WIDGET {
+  content: 'No media query.'; }
 
 /** RESPOND MIN */
-.js {
-  content: 'inside media query 3'; }
+.TEST-WIDGET {
+  content: 'inside media query 3.'; }
 
-.js {
-  content: 'inside media query 4'; }
+.TEST-WIDGET {
+  content: 'inside media query 4.'; }
 
 /** RESPOND MAX */
-.js {
-  content: 'inside media query 3'; }
+.TEST-WIDGET {
+  content: 'inside media query 3.'; }
 
-.js {
-  content: 'inside media query 4'; }
+.TEST-WIDGET {
+  content: 'inside media query 4.'; }

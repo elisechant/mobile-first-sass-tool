@@ -3,8 +3,6 @@
 // For IE, don't wrap the styles in media queries
 //
 
-$fix-mqs: false !default;
-
 @mixin respond-min($width) {
 	// if we're outputting for a fixed media query set...
 	@if $fix-mqs {
@@ -42,8 +40,6 @@ $fix-mqs: false !default;
 // Inject IE styles inline without outputting to other browsers
 // Compiles to app-ie.scss
 //
-
-$is-ie: false !default;
 
 @mixin old-ie {
 	// Only use this content if we're dealing with old IE

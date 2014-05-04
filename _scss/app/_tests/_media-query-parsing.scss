@@ -1,46 +1,47 @@
 @warn "---------- ONLY INCLUDE ~/test/**/* IN DEVELOPMENT ----------";
+@debug "---------- Configured min Media Query value = " + $fix-mqs;
 
 
-.js {
-	content: 'outside media query';
+.TEST-WIDGET {
+	content: 'No media query.';
 }
 
 
 /** RESPOND MIN */
-.js {
+.TEST-WIDGET {
 	@include respond-min($mq-group2) {
-		content: 'inside media query 2';
+		content: "Inside media query 2. Don't include in app-basic.";
 	}
 }
 
-.js {
+.TEST-WIDGET {
 	@include respond-min($mq-group3) {
-		content: 'inside media query 3';
+		content: 'inside media query 3.';
 	}
 }
 
-.js {
+.TEST-WIDGET {
 	@include respond-min($mq-group4) {
-		content: 'inside media query 4';
+		content: 'inside media query 4.';
 	}
 }
 
 
 /** RESPOND MAX */
-.js {
+.TEST-WIDGET {
 	@include respond-max($mq-group2) {
-		content: 'inside media query 2';
+		content: "inside media query 2. Don't include in app-basic.";
 	}
 }
 
-.js {
+.TEST-WIDGET {
 	@include respond-max($mq-group3) {
-		content: 'inside media query 3';
+		content: 'inside media query 3.';
 	}
 }
 
-.js {
+.TEST-WIDGET {
 	@include respond-max($mq-group4) {
-		content: 'inside media query 4';
+		content: 'inside media query 4.';
 	}
 }

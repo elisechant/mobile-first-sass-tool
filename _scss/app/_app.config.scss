@@ -1,7 +1,22 @@
 //
+// Baseline
+//
+
+$BASELINE:  16px;
+
+
+//
 // Media query params
 //
 
 $mq-group2: em(600px);
 $mq-group3: em(768px);
 $mq-group4: em(1024px);
+
+
+//
+// Mobile-first Tool dependencies
+//
+
+$fix-mqs: false !default;
+$is-ie: false !default;
