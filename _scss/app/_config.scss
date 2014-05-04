@@ -5,18 +5,15 @@
 $BASELINE:  16px;
 
 
+
 //
-// Media query params
+// Mobile-first SASS Tool
 //
 
+$fix-mqs: false !default;   // don't edit
+$is-ie: false !default;     // don't edit
+
+// 1. Define your media queries
 $mq-group2: em(600px);
 $mq-group3: em(768px);
 $mq-group4: em(1024px);
-
-
-//
-// Mobile-first Tool dependencies
-//
-
-$fix-mqs: false !default;
-$is-ie: false !default;
